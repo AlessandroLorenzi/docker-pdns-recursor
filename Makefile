@@ -1,3 +1,6 @@
+check_latest:
+	docker run -ti alpine:edge apk search --no-cache pdns-recursor
+
 build:
 	docker build . --no-cache -t lmnetworks/pdns-recursor:latest
 	docker tag lmnetworks/pdns-recursor:latest lmnetworks/pdns-recursor:4.1.4
