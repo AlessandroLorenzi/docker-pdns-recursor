@@ -1,6 +1,6 @@
-FROM alpine:edge
+FROM lmnetworks/alpine:3.9.4_20190523
 
-RUN apk add --no-cache pdns-recursor=4.1.8-r0
+RUN apk add --no-cache pdns-recursor=4.1.9-r1
 
 COPY recursor.conf /etc/pdns/recursor.conf
 
