@@ -28,7 +28,7 @@ docker run -d --rm -p 53:53/udp -p 53:53/tcp --name pdns-recursor pdns-recursor
 ### Configuration
 
 Docker image comes with a
-[recursor.conf](https://github.com/AlessandroLorenzi/docker-pdns-recursor/blob/develop/recursor.conf).
+[recursor.conf](https://github.com/LMNetworks/docker-pdns-recursor/blob/develop/recursor.conf).
 
 You can specify command line arguments:
 
