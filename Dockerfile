@@ -6,7 +6,7 @@ LABEL maintainer="info@lm-net.it"
 
 RUN echo '@edge http://dl-cdn.alpinelinux.org/alpine/edge/main' >> /etc/apk/repositories && \
     echo '@edge_community http://dl-cdn.alpinelinux.org/alpine/edge/community' >> /etc/apk/repositories && \
-    apk add --no-cache boost-context@edge=1.69.0-r4 dns-root-hints@edge=2019031302-r1 pdns-recursor@edge_community=4.1.12-r2
+    apk add --no-cache boost-context@edge=1.69.0-r4 dns-root-hints@edge=2019031302-r1 pdns-recursor@edge_community=4.1.13-r0
 
 COPY recursor.conf /etc/pdns/recursor.conf
 
