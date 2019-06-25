@@ -1,12 +1,10 @@
-FROM lmnetworks/alpine:3.9.4_20190523
+FROM lmnetworks/alpine:3.10.0_20190625
 
-LABEL org.alpine.version="3.9.4"
+LABEL com.powerdns.pdns-recursor.version="4.1.13"
 LABEL image_name="lmnetworks/pdns-recursor"
 LABEL maintainer="info@lm-net.it"
 
-RUN echo '@edge http://dl-cdn.alpinelinux.org/alpine/edge/main' >> /etc/apk/repositories && \
-    echo '@edge_community http://dl-cdn.alpinelinux.org/alpine/edge/community' >> /etc/apk/repositories && \
-    apk add --no-cache boost-context@edge=1.69.0-r4 dns-root-hints@edge=2019031302-r1 pdns-recursor@edge_community=4.1.13-r0
+RUN apk add --no-cache pdns-recursor=4.1.13-r0
 
 COPY recursor.conf /etc/pdns/recursor.conf
 
