@@ -1,4 +1,4 @@
-FROM lmnetworks/alpine:3.10.0_20190625
+FROM lmnetworks/alpine:3.10.1_20190723
 
 LABEL com.powerdns.pdns-recursor.version="4.1.13"
 LABEL image_name="lmnetworks/pdns-recursor"
